@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$color-primary: #ec9dd2;
+
+
+/*      estilo de Index     */
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body-ppal {
+    background-image: url(/img/fondo.jpg);
+    background-repeat: repeat;
+}
+
+/*      estilos de header     */
+
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+
+/*     estilo de footer     */
+
+/* footer */
+
+.body-ppal {
+
+    footer {
+    position: relative;
+    top: 220px;
+    }
+}
+
+.footer-style {
+    padding-top: 50px;
+    background-color: #c23da5;
+}
+footer {
+    color: white;
+}
+footer h3 {
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+footer .footer-above {
+    padding-top: 50px;
+    background-color: #2C3E50;
+}
+footer .footer-col {
+    margin-bottom: 50px;
+}
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+}
+
+footer ul {
+    list-style-type: none;
+
+}
+
+footer ul li {
+    display: inline;
+}
+
+.logo-fb {
+    height: 50px;
+}
+
+.logo-ig {
+    height: 50px;
+}
+
+.logo-wp {
+    height: 50px;
+}
+
+
+/*    General a todos los Html    */
+a {
+    text-decoration: none;
+    color: #f72297fd;
+    
+    
+}
+
+/*              Estilos de productos               */
+
+.body-productos{
+    background-color: $color-primary;
+}
+
+.main-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    
+    #nuestros-productos{
+
+    display: inline;
+    background-color: #e965ad;
+    
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px;
+
+    div {
+        .ul-productos{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        margin: 30px;
+        }
+            .ul-productos li{
+            margin: 30px;
+            padding: 10px;
+
+            text-align: center;
+            font-weight: bold;
+
+            .fotos-productos{
+                position: relative;
+                top: 150px;
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+                .torta-p {
+
+                    display: inline-block;
+                    height: 300px;
+                    border-radius: 50px;
+                }
+
+                .postre-p {
+
+                    display: inline-block;
+                    height: 300px;
+                    border-radius: 50px;
+                }
+
+                .alfajor-p {
+
+                    display: inline-block;
+                    height: 290px;
+                    border-radius: 50px;
+                }
+            }
+        } 
+    }
+} 
+
+
+
+
+/*               Estilos de tortas                   */
+
+.body-tortas {
+    background-color: $color-primary;
+    }
+    
+
+    .main-tortas {
+
+        .section-tortas {
+
+            .lemon {
+                width: 500px;
+                }
+
+                .brownie {
+                width: 500px;
+                }
+
+                .crumble {
+                width: 500px;
+                }
+
+                .membrillo {
+                width: 500px;
+                }
+
+            div .lemon-p, .brownie-b, .crumble-c, .pastafrola-p {
+            font-size: 25px;
+            }
+        }
+}
+
+
+
+/*               Estilos de Postres                   */
+.body-postres {
+    background-color: $color-primary;
+}
+
+.tiramisu-t, .parfait-p {
+    font-size: 25px;
+}
+
+
+/*                Estilos de alfajores                */
+
+.body-alfajores {
+    background-color: $color-primary;
+}
+
+.alfajores-a {
+    font-size: 25px;
+}
+
+
+/* Empieza grid de alfajores */
+
+.section-alfajores {
+    margin: 25px;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+}
+
+/* Empieza flexbox de alfajores */
+
+.alfajores-a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+
+
+/*                  Estilos de sucursales            */
+
+.body-sucursales {
+    background-color: $color-primary;
+    position: relative ;
+
+    .sucursales {
+
+        #nuestras-sucursales{
+            display: inline;
+            background-color: #e965ad;
+            
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 50px;
+            }
+
+        .sucursales-mapa ul li {
+            margin: 20px;
+            font-weight: bold;
+            }
+        
+        .accordion-button {
+            color: #c23da5;
+            font-weight: bold;
+        }
+    }
+}
+
+/*                    Estilos de Quienes somos      */
+
+.body-qs {
+    background-color: $color-primary;
+
+    .main-qs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        }
+
+        #quienes-somos {
+            display: inline;
+            background-color: #e965ad;
+            
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 50px;
+        }
+
+        .tarjetas-qs {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .tarjetas-qs .card {
+            margin: 20px;
+            font-size: 20px;
+            
+        }
+
+        .cont-qs {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        p {
+            margin: 10px;
+            padding: 10px
+        } 
+
+}
+
+/*                      Estilos de Contactenos            */
+
+.body-contactenos {
+    background-color: $color-primary;
+
+    .contactenos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;  
+
+            div {
+
+                ul { 
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    
+                    li { 
+                        list-style: none;
+                        }  
+                    } 
+                }  
+
+    .contactenos-h1 {
+        display: inline;
+        background-color: #e965ad;
+        
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 50px;
+        }
+    }
+
+}
+
+/* Inicio de trancisiones y animaciones */
+
+/* Del nav bar */
+.nav-bar .menu-nav li a {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        text-decoration: none;
+        color: #c23da5;
+        }
+        a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: #333;
+        transition: left .8s;
+        }
+        a:hover:after {
+        left: 0;
+        }
+
+
+/* de fotos de productos*/
+
+.torta-p:hover, .postre-p:hover, .alfajor-p:hover {
+    transform: scale(1.2);
+}
+
+.torta-p, .postre-p, .alfajor-p {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+/* mapa de sucursales */
+.caseros, .devoto {
+    animation-name: fade-in-suc;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+}
+@keyframes fade-in-suc {
+    0% {
+        transform:rotatex(-30deg)
+    }
+    50% {
+        transform:rotatex(30deg)
+    }
+    0% {
+        transform:rotate(0deg)
+    }
+    
+}
+
+/* estilos de componentes de Bootstrap*/
+
+/*De las cards de datos*/
+.card {
+    position: relative;
+
+    background-color: #ce77da;
+}
+
+/*del nav bar*/
+.container-fluid {
+    background-color: #ce77da;
+}
+
+/* Del form de contactenos */
+    .form-ct {
+        padding: 5px;
+        margin: 80px;
+        
+        background-color: rgb(199, 139, 235);
+        font-size: 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+/* De los botones de información */
+.btn {
+    background-color: #ce5cb5;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@import "mediaqueries"

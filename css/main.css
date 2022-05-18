@@ -114,6 +114,17 @@ a {
         height: 290px;
         border-radius: 50px; }
 
+/*Aplicación de maps en subtitulos*/
+.prod-tortas {
+  color: #ff00c8; }
+
+.prod-postres {
+  color: #8b3de6; }
+
+.prod-alfajores {
+  color: #933ab6; }
+
+/*fin de aplicacion de maps*/
 /*               Estilos de tortas                   */
 .body-tortas {
   background-color: #ec9dd2; }
@@ -131,6 +142,9 @@ a {
   width: 500px; }
 
 .main-tortas .section-tortas div .lemon-p, .main-tortas .section-tortas .brownie-b, .main-tortas .section-tortas .crumble-c, .main-tortas .section-tortas .pastafrola-p {
+  font-size: 25px; }
+
+.main-tortas .section-tortas .lemon-p p {
   font-size: 25px; }
 
 /*               Estilos de Postres                   */
@@ -283,10 +297,15 @@ a:hover:after {
     transform: rotate(0deg); } }
 
 /* estilos de componentes de Bootstrap*/
-/*De las cards de datos*/
+/*aplicación de mixin en cards*/
+/*De las cards de datos (incluyendo mixin)*/
 .card {
   position: relative;
   background-color: #ce77da; }
+
+/*de las cards de quienes somos */
+.card-body-qs {
+  height: 600px; }
 
 /*del nav bar*/
 .container-fluid {
@@ -303,10 +322,16 @@ a:hover:after {
   text-align: center; }
 
 /* De los botones de información */
-.btn {
+.btn, .btn-qs {
   background-color: #ce5cb5;
   font-weight: bold;
   font-size: 20px; }
+
+/*aplicación de extend en boton*/
+.btn-qs {
+  text-decoration: underline;
+  text-align: center;
+  color: #6520a5; }
 
 /*                                   INICIO DE RESPONSIVE                       */
 /* Mobile first de 360px*/

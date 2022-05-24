@@ -5,6 +5,7 @@
 }
 
 $color-primary: #ec9dd2;
+$spacing: 8px;
 
 
 /*      estilo de Index     */
@@ -15,7 +16,7 @@ body {
 }
 
 .body-ppal {
-    background-image: url(/img/fondo.jpg);
+    background-color: #ec9dd2;
     background-repeat: repeat;
 }
 
@@ -343,7 +344,39 @@ a {
         p {
             margin: 10px;
             padding: 10px
-        } 
+        }
+        
+        .frase {
+            text-align: center;
+            p { 
+                font-weight: bold;
+                font-size: 25px;
+                .n {
+                    background-color: #8b3de6;
+                    margin: 2px;
+                    padding-right: $spacing *2;
+                    text-align: center;
+                }
+                .a {
+                    background-color: #933ab6;
+                    margin: 2px;
+                    padding-right: $spacing *3;
+                    text-align: center;
+                }
+                .t {
+                    background-color: #c23da5;
+                    margin: 2px;
+                    padding-right: $spacing *4;
+                    text-align: center;
+                }
+                .s {
+                    background-color: #ce5cb5;
+                    margin: 2px;
+                    padding-right: $spacing *5;
+                    text-align: center;
+                }
+            }
+    }
 
 }
 

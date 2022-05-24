@@ -110,22 +110,28 @@
             grid-gap: 15px;
             flex-direction: row;
             flex-wrap: wrap;
-                        }
+        
 
-        .lemon {
-            width: 200px;
-        }
-        
-        .brownie {
-            width: 200px;
-        }
-        
-        .crumble {
-            width: 200px;
-        }
-        
-        .membrillo {
-            width: 200px;
+            .tortas { 
+
+                .lemon {
+                        width: 300px;
+                    }
+                    
+                .brownie {
+                        width: 300px;
+                    }
+                    
+                .crumble {
+                        width: 300px;
+                    }
+                    
+                .membrillo {
+                        width: 300px;
+                    }
+                }
+
+            
         }
 
         
@@ -337,7 +343,27 @@
             display: grid;
             grid-template-columns: auto auto;
             grid-gap: 10px;
+
+            .tortas { 
+
+                .lemon {
+                        width: 500px;
+                    }
+                    
+                .brownie {
+                        width: 500px;
+                    }
+                    
+                .crumble {
+                        width: 500px;
+                    }
+                    
+                .membrillo {
+                        width: 500px;
+                    }
+                }
         }
+        
 
     /* Postres */
 
@@ -404,9 +430,7 @@
         width: 800px;
         position: relative;
         top: 20px;
-        left: 300px;
-
-        
+        left: 550px;
     }
 
     /* Contactenos*/

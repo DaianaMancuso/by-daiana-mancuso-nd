@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 .body-ppal {
-  background-image: url(/img/fondo.jpg);
+  background-color: #ec9dd2;
   background-repeat: repeat; }
 
 /*      estilos de header     */
@@ -226,6 +226,31 @@ a {
   .body-qs p {
     margin: 10px;
     padding: 10px; }
+  .body-qs .frase {
+    text-align: center; }
+    .body-qs .frase p {
+      font-weight: bold;
+      font-size: 25px; }
+      .body-qs .frase p .n {
+        background-color: #8b3de6;
+        margin: 2px;
+        padding-right: 16px;
+        text-align: center; }
+      .body-qs .frase p .a {
+        background-color: #933ab6;
+        margin: 2px;
+        padding-right: 24px;
+        text-align: center; }
+      .body-qs .frase p .t {
+        background-color: #c23da5;
+        margin: 2px;
+        padding-right: 32px;
+        text-align: center; }
+      .body-qs .frase p .s {
+        background-color: #ce5cb5;
+        margin: 2px;
+        padding-right: 40px;
+        text-align: center; }
 
 /*                      Estilos de Contactenos            */
 .body-contactenos {
@@ -397,14 +422,14 @@ a:hover:after {
     grid-gap: 15px;
     flex-direction: row;
     flex-wrap: wrap; }
-  .lemon {
-    width: 200px; }
-  .brownie {
-    width: 200px; }
-  .crumble {
-    width: 200px; }
-  .membrillo {
-    width: 200px; }
+    .section-tortas .tortas .lemon {
+      width: 300px; }
+    .section-tortas .tortas .brownie {
+      width: 300px; }
+    .section-tortas .tortas .crumble {
+      width: 300px; }
+    .section-tortas .tortas .membrillo {
+      width: 300px; }
   /* empieza flexbox de cada item de tortas*/
   .lemon-p, .brownie-b, .crumble-c, .pastafrola-p {
     display: flex;
@@ -529,6 +554,14 @@ a:hover:after {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px; }
+    .section-tortas .tortas .lemon {
+      width: 500px; }
+    .section-tortas .tortas .brownie {
+      width: 500px; }
+    .section-tortas .tortas .crumble {
+      width: 500px; }
+    .section-tortas .tortas .membrillo {
+      width: 500px; }
   /* Postres */
   /* Empieza grids de postres */
   .section-postres {
@@ -572,7 +605,7 @@ a:hover:after {
     width: 800px;
     position: relative;
     top: 20px;
-    left: 300px; }
+    left: 550px; }
   /* Contactenos*/
   .form-ct {
     width: 400px;

@@ -12,10 +12,11 @@
             .body-ppal {
                 
                 display: grid;
-                grid-template-rows: auto auto 500px;
+                grid-template-rows: auto auto auto 500px;
                 grid-template-areas: 
-                "logo main"
-                "nav main"
+                "logo logo"
+                "nav nav"
+                "main main"
                 "footer footer"
                 ;
                 justify-items: start;
@@ -25,6 +26,10 @@
             
                 .logo {
                     grid-area: logo;
+                }
+
+                .navbar {
+                    grid-area: nav;
                 }
 
                 .main-inicio {
@@ -146,6 +151,17 @@
             text-align: left;
             }
 
+        /*.card-btn {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            }*/
+        
+
+
     /* Postres */
 
         .section-postres {
@@ -165,13 +181,20 @@
         
         
     /* Alfajores */
+    
+    .section-alfajores {
+        position: relative;
+
         .alfajores {
             width: 300px;
+
+            .parrafo-alfj {
+            font-size: 50px;
+            }
         }
 
-        .parrafo-alfj {
-            font-size: 50px;
-        }
+    }
+
 
     /* Sucursales */
         .sucursales-mapa {
@@ -202,12 +225,22 @@
         
     /*Quienes somos */
         .img-qs {
-            width: 400px;
+            width: 350px;
             position: relative;
             top: 20px;
-            left: 35px;
-
+            left: 10px;
             }
+        .frase {
+            p{
+                span{ 
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                }
+            }
+            
+        }
+        
 
         .cont-qs p{
             font-size: 20px;
@@ -223,13 +256,13 @@
                     .ft-pc {
                         position: relative;
                         bottom: 30px;
-                        height: 250px;
+                        height: 200px;
                         right: 2px;
                             }
                     }
                 }
             }
-}
+
     
 
     /*Version de tablet 768px */
@@ -255,6 +288,9 @@
             width: 100%;
             }
         }
+
+    /* Tortas /*
+    
 
     /* Postres */
 
@@ -445,5 +481,5 @@
         top: 150px;
         height: 300px;
     }
-
+    }
 }

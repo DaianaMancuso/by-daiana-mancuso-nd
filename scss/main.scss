@@ -16,7 +16,7 @@ body {
 }
 
 .body-ppal {
-    background-color: #ec9dd2;
+    background-image: url("../img/fondo.jpg");
     background-repeat: repeat;
 }
 
@@ -171,7 +171,7 @@ a {
             /*Aplicación de maps en subtitulos*/ 
 
             $productos: (
-                tortas: #ff00c8,
+                tortas: #ae00ff,
                 postres: #8b3de6,
                 alfajores: #933ab6
 
@@ -421,24 +421,24 @@ a {
 /* Inicio de trancisiones y animaciones */
 
 /* Del nav bar */
-.nav-bar .menu-nav li a {
+.nav-bar .menu-nav .nav-item {
         position: relative;
         overflow: hidden;
         display: inline-block;
         text-decoration: none;
         color: #c23da5;
         }
-        a:after {
+        .nav-link:after {
         content: "";
         position: absolute;
         bottom: 0;
         left: -100%;
         width: 100%;
         height: 2px;
-        background: #333;
+        background: rgb(203, 56, 216);
         transition: left .8s;
         }
-        a:hover:after {
+        .nav-link:hover:after {
         left: 0;
         }
 
@@ -491,7 +491,7 @@ a {
 
 /*de las cards de quienes somos */
 .card-body-qs {
-    @include size (600px);
+    @include size (450px);
 }
 
 

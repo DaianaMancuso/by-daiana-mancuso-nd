@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 .body-ppal {
-  background-color: #ec9dd2;
+  background-image: url("../img/fondo.jpg");
   background-repeat: repeat; }
 
 /*      estilos de header     */
@@ -116,7 +116,7 @@ a {
 
 /*Aplicación de maps en subtitulos*/
 .prod-tortas {
-  color: #ff00c8; }
+  color: #ae00ff; }
 
 .prod-postres {
   color: #8b3de6; }
@@ -277,24 +277,24 @@ a {
 
 /* Inicio de trancisiones y animaciones */
 /* Del nav bar */
-.nav-bar .menu-nav li a {
+.nav-bar .menu-nav .nav-item {
   position: relative;
   overflow: hidden;
   display: inline-block;
   text-decoration: none;
   color: #c23da5; }
 
-a:after {
+.nav-link:after {
   content: "";
   position: absolute;
   bottom: 0;
   left: -100%;
   width: 100%;
   height: 2px;
-  background: #333;
+  background: #cb38d8;
   transition: left .8s; }
 
-a:hover:after {
+.nav-link:hover:after {
   left: 0; }
 
 /* de fotos de productos*/
@@ -330,7 +330,7 @@ a:hover:after {
 
 /*de las cards de quienes somos */
 .card-body-qs {
-  height: 600px; }
+  height: 450px; }
 
 /*del nav bar*/
 .container-fluid {
@@ -365,12 +365,14 @@ a:hover:after {
   /*Header*/
   .body-ppal {
     display: grid;
-    grid-template-rows: auto auto 500px;
-    grid-template-areas: "logo main" "nav main" "footer footer";
+    grid-template-rows: auto auto auto 500px;
+    grid-template-areas: "logo logo" "nav nav" "main main" "footer footer";
     justify-items: start;
     align-items: center; }
   .logo {
     grid-area: logo; }
+  .navbar {
+    grid-area: nav; }
   .main-inicio {
     grid-area: main; }
   .text-center {
@@ -438,6 +440,14 @@ a:hover:after {
     justify-content: center;
     align-items: center;
     text-align: left; }
+  /*.card-btn {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            }*/
   /* Postres */
   .section-postres {
     margin: 25px;
@@ -449,10 +459,12 @@ a:hover:after {
   .parfait {
     width: 300px; }
   /* Alfajores */
-  .alfajores {
-    width: 300px; }
-  .parrafo-alfj {
-    font-size: 50px; }
+  .section-alfajores {
+    position: relative; }
+    .section-alfajores .alfajores {
+      width: 300px; }
+      .section-alfajores .alfajores .parrafo-alfj {
+        font-size: 50px; }
   /* Sucursales */
   .sucursales-mapa {
     top: 200px;
@@ -473,10 +485,14 @@ a:hover:after {
     width: 300px; }
   /*Quienes somos */
   .img-qs {
-    width: 400px;
+    width: 350px;
     position: relative;
     top: 20px;
-    left: 35px; }
+    left: 10px; }
+  .frase p span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
   .cont-qs p {
     font-size: 20px; }
   /* Contactenos */
@@ -486,11 +502,11 @@ a:hover:after {
   div ul li .ft-pc {
     position: relative;
     bottom: 30px;
-    height: 250px;
-    right: 2px; } }
+    height: 200px;
+    right: 2px; }
+  /*Version de tablet 768px */ }
 
-/*Version de tablet 768px */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 360px) and (min-width: 768px) {
   /*Del index*/
   .badge {
     font-size: 70px;
@@ -503,7 +519,10 @@ a:hover:after {
     position: relative;
     top: 300px;
     width: 100%; }
-  /* Postres */
+  /* Tortas /*
+    
+
+    /* Postres */
   .tiramisu {
     width: 500px; }
   .parfait {
@@ -522,8 +541,10 @@ a:hover:after {
     position: relative;
     left: 5px; } }
 
-/* Version desktop 1024px */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 360px) {
+  /* Version desktop 1024px */ }
+
+@media screen and (min-width: 360px) and (min-width: 1024px) {
   /*Del index*/
   .badge {
     font-size: 70px;

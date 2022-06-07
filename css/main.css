@@ -19,7 +19,6 @@ body {
   width: 50px; }
 
 /*     estilo de footer     */
-/* footer */
 .body-ppal footer {
   position: relative;
   top: 220px; }
@@ -35,31 +34,27 @@ footer h3 {
   margin-bottom: 30px;
   font-weight: 800; }
 
-footer .footer-above {
-  padding-top: 50px;
-  background-color: #2C3E50; }
-
+/*footer .footer-above {
+    padding-top: 50px;
+    background-color: #2C3E50;
+}
 footer .footer-col {
-  margin-bottom: 50px; }
-
+    margin-bottom: 50px;
+}
 footer .footer-below {
-  padding: 25px 0;
-  background-color: #233140; }
-
+    padding: 25px 0;
+    background-color: #233140;
+}*/
 footer ul {
   list-style-type: none; }
-
-footer ul li {
-  display: inline; }
-
-.logo-fb {
-  height: 50px; }
-
-.logo-ig {
-  height: 50px; }
-
-.logo-wp {
-  height: 50px; }
+  footer ul li {
+    display: inline; }
+    footer ul li .logo-fb {
+      height: 50px; }
+    footer ul li .logo-ig {
+      height: 50px; }
+    footer ul li .logo-wp {
+      height: 50px; }
 
 /*    General a todos los Html    */
 a {
@@ -150,16 +145,14 @@ a {
 /*               Estilos de Postres                   */
 .body-postres {
   background-color: #ec9dd2; }
-
-.tiramisu-t, .parfait-p {
-  font-size: 25px; }
+  .body-postres .section-postres .tiramisu-t, .body-postres .section-postres .parfait-p {
+    font-size: 25px; }
 
 /*                Estilos de alfajores                */
 .body-alfajores {
   background-color: #ec9dd2; }
-
-.alfajores-a {
-  font-size: 25px; }
+  .body-alfajores .section-alfajores .alfajores-a {
+    font-size: 25px; }
 
 /* Empieza grid de alfajores */
 .section-alfajores {
@@ -182,15 +175,17 @@ a {
   background-color: #ec9dd2;
   position: relative; }
   .body-sucursales .sucursales #nuestras-sucursales {
-    display: inline;
     background-color: #e965ad;
     text-align: center;
     margin: 10px;
     padding: 10px;
     border-radius: 50px; }
-  .body-sucursales .sucursales .sucursales-mapa ul li {
-    margin: 20px;
-    font-weight: bold; }
+  .body-sucursales .sucursales .sucursales-mapa ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .body-sucursales .sucursales .sucursales-mapa ul li {
+      margin: 20px;
+      font-weight: bold; }
   .body-sucursales .sucursales .accordion-button {
     color: #c23da5;
     font-weight: bold; }
@@ -215,9 +210,9 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; }
-  .body-qs .tarjetas-qs .card {
-    margin: 20px;
-    font-size: 20px; }
+    .body-qs .tarjetas-qs .card {
+      margin: 20px;
+      font-size: 20px; }
   .body-qs .cont-qs {
     display: flex;
     flex-direction: column;
@@ -262,7 +257,7 @@ a {
     align-content: center; }
     .body-contactenos .contactenos div ul {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-around; }
       .body-contactenos .contactenos div ul li {
@@ -275,7 +270,7 @@ a {
       padding: 10px;
       border-radius: 50px; }
 
-/* Inicio de trancisiones y animaciones */
+/*     Inicio de trancisiones y animaciones    */
 /* Del nav bar */
 .nav-bar .menu-nav .nav-item {
   position: relative;
@@ -321,11 +316,13 @@ a {
   0% {
     transform: rotate(0deg); } }
 
-/* estilos de componentes de Bootstrap*/
+/* Fin de trancisiones y animaciones*/
+/*       estilos de componentes de Bootstrap       */
 /*aplicación de mixin en cards*/
 /*De las cards de datos (incluyendo mixin)*/
 .card {
   position: relative;
+  margin: 0 auto;
   background-color: #ce77da; }
 
 /*de las cards de quienes somos */
@@ -348,15 +345,19 @@ a {
 
 /* De los botones de información */
 .btn, .btn-qs {
+  margin-top: 10px;
   background-color: #ce5cb5;
   font-weight: bold;
   font-size: 20px; }
 
-/*aplicación de extend en boton*/
+/*   aplicación de extend en boton   */
 .btn-qs {
   text-decoration: underline;
   text-align: center;
   color: #6520a5; }
+
+ol, ul {
+  padding-left: 0px !important; }
 
 /*                                   INICIO DE RESPONSIVE                       */
 /* Mobile first de 360px*/
@@ -365,7 +366,7 @@ a {
   /*Header*/
   .body-ppal {
     display: grid;
-    grid-template-rows: auto auto auto 500px;
+    grid-template-rows: auto auto 500px;
     grid-template-areas: "logo logo" "nav nav" "main main" "footer footer";
     justify-items: start;
     align-items: center; }
@@ -385,52 +386,47 @@ a {
     text-shadow: 5px 5px 10px #ec3fde;
     border-radius: 20px;
     position: relative; }
-  .derechos {
-    color: blanchedalmond;
-    font-weight: bold; }
   /* Productos */
-  .ul-productos {
+  .body-productos .main-productos div .ul-productos {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin: 30px; }
-  .ul-productos li {
-    margin: 30px;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px; }
-  .torta-p {
-    display: inline-block;
-    height: 300px;
-    border-radius: 50px; }
-  .postre-p {
-    display: inline-block;
-    height: 300px;
-    border-radius: 50px; }
-  .alfajor-p {
-    display: inline-block;
-    height: 290px;
-    border-radius: 50px; }
+    .body-productos .main-productos div .ul-productos li {
+      margin: 30px;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px; }
+    .body-productos .main-productos div .ul-productos .torta-p {
+      display: inline-block;
+      height: 300px;
+      border-radius: 50px; }
+    .body-productos .main-productos div .ul-productos .postre-p {
+      display: inline-block;
+      height: 300px;
+      border-radius: 50px; }
+    .body-productos .main-productos div .ul-productos .alfajor-p {
+      display: inline-block;
+      height: 290px;
+      border-radius: 50px; }
   /* Tortas */
-  .body-tortas {
-    background-color: #ec9dd2; }
-  .section-tortas {
+  .main-tortas .section-tortas {
     margin: 25px;
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-gap: 15px;
     flex-direction: row;
     flex-wrap: wrap; }
-    .section-tortas .tortas .lemon {
+    .main-tortas .section-tortas .tortas .lemon {
       width: 300px; }
-    .section-tortas .tortas .brownie {
+    .main-tortas .section-tortas .tortas .brownie {
       width: 300px; }
-    .section-tortas .tortas .crumble {
+    .main-tortas .section-tortas .tortas .crumble {
       width: 300px; }
-    .section-tortas .tortas .membrillo {
+    .main-tortas .section-tortas .tortas .membrillo {
       width: 300px; }
   /* empieza flexbox de cada item de tortas*/
   .lemon-p, .brownie-b, .crumble-c, .pastafrola-p {
@@ -440,111 +436,106 @@ a {
     justify-content: center;
     align-items: center;
     text-align: left; }
-  /*.card-btn {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            text-align: left;
-            }*/
+  /*Fin de flexbox*/
   /* Postres */
-  .section-postres {
+  .body-postres .section-postres {
     margin: 25px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap; }
-  .tiramisu {
-    width: 300px; }
-  .parfait {
-    width: 300px; }
+    .body-postres .section-postres .tiramisu-t, .body-postres .section-postres .parfait-p {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: left; }
+    .body-postres .section-postres .tiramisu {
+      width: 300px;
+      margin: 0 auto; }
+    .body-postres .section-postres .parfait {
+      width: 300px;
+      margin: 0 auto; }
   /* Alfajores */
-  .section-alfajores {
-    position: relative; }
-    .section-alfajores .alfajores {
-      width: 300px; }
-      .section-alfajores .alfajores .parrafo-alfj {
-        font-size: 50px; }
+  .alfajores {
+    width: 300px; }
+  .parrafo-alfj {
+    font-size: 50px; }
   /* Sucursales */
-  .sucursales-mapa {
+  .body-sucursales .sucursales .sucursales-mapa {
     top: 200px;
     margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; }
-  .sucursales-mapa ul {
+  .body-sucursales .sucursales .sucursales-mapa ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     justify-content: center; }
-  .caseros {
+  .body-sucursales .sucursales .caseros {
     width: 300px; }
-  .devoto {
+  .body-sucursales .sucursales .devoto {
     width: 300px; }
   /*Quienes somos */
-  .img-qs {
+  .body-qs .main-qs .img-qs {
     width: 350px;
     position: relative;
     top: 20px;
-    left: 10px; }
-  .frase p span {
+    margin: 0 auto; }
+  .body-qs .main-qs .frase p span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-  .cont-qs p {
+  .body-qs .main-qs .frase .cont-qs p {
     font-size: 20px; }
   /* Contactenos */
-  div ul li .form-ct {
+  .body-contactenos .contactenos div ul li .form-ct {
     position: relative;
-    right: 5px; }
-  div ul li .ft-pc {
-    position: relative;
-    bottom: 30px;
-    height: 200px;
-    right: 2px; }
-  /*Version de tablet 768px */ }
+    right: 5px; } }
 
-@media screen and (min-width: 360px) and (min-width: 768px) {
+/*Version 576px */
+@media screen and (min-width: 576px) {
+  footer {
+    position: relative;
+    width: 100%; } }
+
+/*Version de tablet 768px */
+@media screen and (min-width: 768px) {
   /*Del index*/
-  .badge {
+  .body-ppal .main-inicio .badge {
     font-size: 70px;
     color: #8320bdfd;
     text-shadow: 5px 5px 10px #ec3fde;
     background-color: #d682cb;
     position: relative;
     right: 10px; }
-  .body-ppal footer {
+  .body-ppal .body-ppal footer {
     position: relative;
     top: 300px;
     width: 100%; }
-  /* Tortas /*
-    
-
-    /* Postres */
-  .tiramisu {
+  /* Postres */
+  .body-postres .section-postres .tiramisu {
     width: 500px; }
-  .parfait {
+  .body-postres .section-postres .parfait {
     width: 500px; }
   /* Alfajores */
-  .alfajores {
+  .section-alfajores .alfajores-a .alfajores {
     width: 500px; }
   /*Quienes somos */
-  .img-qs {
+  .main-qs .img-qs {
     width: 700px;
     position: relative;
     top: 20px; }
   /* Contactenos */
-  .form-ct {
-    width: 400px;
+  .body-contactenos .contactenos div ul li .form-ct {
     position: relative;
-    left: 5px; } }
+    margin: 80px; } }
 
-@media screen and (min-width: 360px) {
-  /* Version desktop 1024px */ }
-
-@media screen and (min-width: 360px) and (min-width: 1024px) {
+/* Version desktop 1024px */
+@media screen and (min-width: 1024px) {
   /*Del index*/
   .badge {
     font-size: 70px;
@@ -599,40 +590,30 @@ a {
     align-items: center;
     text-align: left; }
   /* Sucursales */
-  .sucursales {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center; }
-  .sucursales-mapa {
+  .body-sucursales .sucursales .sucursales-mapa {
     top: 200px;
     margin: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center; }
-  .sucursales-mapa ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    justify-content: center; }
-  .caseros {
-    width: 600px; }
-  .devoto {
-    width: 600px; }
+    align-items: center;
+    flex-wrap: wrap; }
+    .body-sucursales .sucursales .sucursales-mapa ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      justify-content: center; }
+      .body-sucursales .sucursales .sucursales-mapa ul li .caseros {
+        width: 600px; }
+      .body-sucursales .sucursales .sucursales-mapa ul li .devoto {
+        width: 600px; }
   /*Quienes somos */
-  .img-qs {
-    width: 800px;
-    position: relative;
-    top: 20px;
-    left: 550px; }
+  .body-qs .main-qs .img-qs {
+    width: 700px;
+    top: 20px; }
   /* Contactenos*/
-  .form-ct {
+  .body-qs .main-qs .form-ct {
     width: 400px;
     position: relative;
-    left: 20px; }
-  .ft-pc {
-    position: relative;
-    top: 150px;
-    height: 300px; } }
+    margin: 0 auto; } }

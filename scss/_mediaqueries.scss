@@ -12,7 +12,7 @@
             .body-ppal {
                 
                 display: grid;
-                grid-template-rows: auto auto auto 500px;
+                grid-template-rows: auto auto 500px;
                 grid-template-areas: 
                 "logo logo"
                 "nav nav"
@@ -53,61 +53,53 @@
             position: relative;
             }
 
-        .derechos {
-            color: blanchedalmond;
-            font-weight: bold;
-            
-        }
-
     /* Productos */
         
-        .ul-productos{
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-                        
-            margin: 30px;
-        }
-        
-        .ul-productos li{
-            margin: 30px;
-            padding: 10px;
-        
-            text-align: center;
-            font-weight: bold;
-            font-size: 30px;
-        }
+    .body-productos {
 
-        .torta-p {
-        
-            display: inline-block;
-            height: 300px;
-            border-radius: 50px;
+        .main-productos {
+            div {
+                .ul-productos{
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                                
+                    margin: 30px;
+
+                    li {
+                        margin: 30px;
+                        padding: 10px;
+                    
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 30px;
+                    }
+
+                    .torta-p {
+                        display: inline-block;
+                        height: 300px;
+                        border-radius: 50px;
+                    }
+                    .postre-p {
+                        display: inline-block;
+                        height: 300px;
+                        border-radius: 50px;
+                    }
+                    .alfajor-p {
+                        display: inline-block;
+                        height: 290px;
+                        border-radius: 50px;
+                    }
+                }
+            }
         }
-        
-        .postre-p {
-        
-            display: inline-block;
-            height: 300px;
-            border-radius: 50px;
-        }
-        
-        .alfajor-p {
-        
-            display: inline-block;
-            height: 290px;
-            border-radius: 50px;
-        }
-        
+    }
 
     /* Tortas */
 
-        .body-tortas {
-            background-color: #ec9dd2;
-        }
-        
+    .main-tortas {
         .section-tortas {
             margin: 25px;
             display: grid;
@@ -115,215 +107,238 @@
             grid-gap: 15px;
             flex-direction: row;
             flex-wrap: wrap;
-        
-
+            
             .tortas { 
-
                 .lemon {
-                        width: 300px;
-                    }
-                    
-                .brownie {
-                        width: 300px;
-                    }
-                    
-                .crumble {
-                        width: 300px;
-                    }
-                    
-                .membrillo {
-                        width: 300px;
-                    }
+                    width: 300px;
                 }
-
-            
-        }
-
-        
-        /* empieza flexbox de cada item de tortas*/
-            
-        .lemon-p, .brownie-b, .crumble-c, .pastafrola-p {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            text-align: left;
+                        
+                .brownie {
+                    width: 300px;
+                    }
+                        
+                .crumble {
+                    width: 300px;
+                    }
+                        
+                .membrillo {
+                    width: 300px;
+                    }
             }
+        }
+    }
 
-        /*.card-btn {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            text-align: left;
-            }*/
+    
+    /* empieza flexbox de cada item de tortas*/
         
-
+    .lemon-p, .brownie-b, .crumble-c, .pastafrola-p {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        }
+    /*Fin de flexbox*/
 
     /* Postres */
+
+    .body-postres {
 
         .section-postres {
             margin: 25px;
 
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
-        }
 
-        .tiramisu {
-            width: 300px;
-        }
-        .parfait {
-            width: 300px;
-        }
-        
-        
-    /* Alfajores */
-    
-    .section-alfajores {
-        position: relative;
-
-        .alfajores {
-            width: 300px;
-
-            .parrafo-alfj {
-            font-size: 50px;
+            .tiramisu-t, .parfait-p {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                text-align: left;
+            }
+            .tiramisu {
+                width: 300px;
+                margin: 0 auto;
+            }
+            .parfait {
+                width: 300px;
+                margin: 0 auto;
             }
         }
+    }
+    /* Alfajores */
+        .alfajores {
+            width: 300px;
+        }
 
+        .parrafo-alfj {
+            font-size: 50px;
+        }
+
+    /* Sucursales */
+
+    .body-sucursales {
+
+        .sucursales {
+            .sucursales-mapa {
+                top: 200px;
+                margin: 20px;
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                }
+    
+            .sucursales-mapa ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                justify-content: center;
+                }
+            
+                .caseros {
+                    width: 300px;
+                    }
+        
+                .devoto {
+                    width: 300px;
+                    }
+        }
+    }
+        
+    /*Quienes somos */
+
+    .body-qs {
+
+        .main-qs {
+            .img-qs {
+                width: 350px;
+                position: relative;
+                top: 20px;
+                margin: 0 auto;
+                }
+            .frase {
+                p{
+                    span{ 
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    }
+                }
+                .cont-qs p{
+                    font-size: 20px;
+                }
+            }
+        }
     }
 
 
-    /* Sucursales */
-        .sucursales-mapa {
-            top: 200px;
-            margin: 20px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            }
-
-        .sucursales-mapa ul {
-            list-style-type: none;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            justify-content: center;
-            }
-        
-            .caseros {
-                width: 300px;
-                }
-    
-            .devoto {
-                width: 300px;
-                }
-        
-    /*Quienes somos */
-        .img-qs {
-            width: 350px;
-            position: relative;
-            top: 20px;
-            left: 10px;
-            }
-        .frase {
-            p{
-                span{ 
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                }
-            }
-            
-        }
-        
-
-        .cont-qs p{
-            font-size: 20px;
-        }
     /* Contactenos */
-        div {
-            ul{
-                li {
-                    .form-ct {
-                        position: relative;
-                        right: 5px;
-                            }
-                    .ft-pc {
-                        position: relative;
-                        bottom: 30px;
-                        height: 200px;
-                        right: 2px;
-                            }
+
+    .body-contactenos {
+        .contactenos {
+            div {
+                ul{
+                    li {
+                        .form-ct {
+                            position: relative;
+                            right: 5px;
+                        }
                     }
                 }
             }
+        } 
+    }
+}
 
-    
+/*Version 576px */
+    @media screen and (min-width: 576px)  {
+        footer {
+            position: relative;
+            width: 100%;
+        }
+    } 
 
     /*Version de tablet 768px */
 
     @media screen and (min-width: 768px) {
 
     /*Del index*/
-        .badge{
-            font-size: 70px;
-            color: #8320bdfd;
-            text-shadow: 5px 5px 10px rgb(236, 63, 222);
-            background-color: rgb(214, 130, 203);
-            position: relative;
-            right: 10px;
-        }
-
-        .body-ppal {
-
-            footer {
-            position: relative;
-            top: 300px;
-            
-            width: 100%;
+    .body-ppal {
+        .main-inicio {
+            .badge{
+                font-size: 70px;
+                color: #8320bdfd;
+                text-shadow: 5px 5px 10px rgb(236, 63, 222);
+                background-color: rgb(214, 130, 203);
+                position: relative;
+                right: 10px;
             }
         }
-
-    /* Tortas /*
-    
+        .body-ppal {
+            footer {
+                position: relative;
+                top: 300px;
+                
+                width: 100%;
+                }
+        }
+    }
 
     /* Postres */
 
-        .tiramisu {
-            width: 500px;
+    .body-postres {
+        .section-postres {
+            .tiramisu {
+                width: 500px;
+            }
+            .parfait {
+                width: 500px;
+            }
         }
-        .parfait {
-            width: 500px;
-        }
-        
+    }
+
     /* Alfajores */
 
+    .section-alfajores {
+        .alfajores-a {
             .alfajores {
-            width: 500px;
-            }
+                width: 500px;
+                }
+        }
+    }
 
     /*Quienes somos */
+    .main-qs{
         .img-qs {
             width: 700px;
             position: relative;
             top: 20px;
-
-            
-        }
+            }
+    }
     
     /* Contactenos */
-    .form-ct {
-        width: 400px;
-        position: relative;
-        left: 5px;
-        
-    }
 
+    .body-contactenos {
+        .contactenos {
+            div {
+                ul{
+                    li {
+                        .form-ct {
+                            position: relative;
+                            margin: 80px
+                        }
+                    }
+                }
+            }
+        } 
+    }
 }
 
 /* Version desktop 1024px */
@@ -426,60 +441,61 @@
 
     /* Sucursales */
 
+    .body-sucursales {
 
         .sucursales {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-content: center;  
+            .sucursales-mapa {
+                top: 200px;
+                margin: 20px;
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+
+                ul {
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    justify-content: center;
+
+                    li {
+                        .caseros {
+                            width: 600px;
+                            }
+                
+                        .devoto {
+                            width: 600px;
+                            }
+                    }
+                }
             }
 
-        .sucursales-mapa {
-            top: 200px;
-            margin: 20px;
-
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            }
-
-        .sucursales-mapa ul {
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            justify-content: center;
-            }
-
-
-        .caseros {
-            width: 600px;
-            }
-
-        .devoto {
-            width: 600px;
-            }
+        }
+    }
 
     /*Quienes somos */
-    .img-qs {
-        width: 800px;
-        position: relative;
-        top: 20px;
-        left: 550px;
-    }
+    .body-qs {
+            .main-qs{
+                .img-qs {
+                width: 700px;
+                top: 20px;
+                }
+            }
+        }
+
 
     /* Contactenos*/
-    .form-ct {
-        width: 400px;
-        position: relative;
-        left: 20px;
-        
+    .body-qs {
+        .main-qs{
+            .form-ct {
+                width: 400px;
+                position: relative;
+                margin: 0 auto;
+            }
+        }
     }
-    .ft-pc {
-        position: relative;
-        top: 150px;
-        height: 300px;
-    }
-    }
+
 }

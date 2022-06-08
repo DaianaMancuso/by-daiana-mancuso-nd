@@ -388,31 +388,33 @@
     /* tortas */ 
 
         /* empiezan grids de tortas*/
-        .section-tortas {
-            margin: 25px;
-
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-gap: 10px;
-
-            .tortas { 
-
-                .lemon {
+        .main-tortas {
+            .section-tortas {
+                margin: 25px;
+                display: grid;
+                grid-template-rows: auto auto auto auto;
+                grid-gap: 15px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                
+                .tortas { 
+                    .lemon {
                         width: 500px;
                     }
-                    
-                .brownie {
+                            
+                    .brownie {
                         width: 500px;
-                    }
-                    
-                .crumble {
+                        }
+                            
+                    .crumble {
                         width: 500px;
-                    }
-                    
-                .membrillo {
-                        width: 500px;
-                    }
+                        }
+                            
+                    .membrillo {
+                        width:500px;
+                        }
                 }
+            }
         }
         
 

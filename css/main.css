@@ -34,17 +34,6 @@ footer h3 {
   margin-bottom: 30px;
   font-weight: 800; }
 
-/*footer .footer-above {
-    padding-top: 50px;
-    background-color: #2C3E50;
-}
-footer .footer-col {
-    margin-bottom: 50px;
-}
-footer .footer-below {
-    padding: 25px 0;
-    background-color: #233140;
-}*/
 footer ul {
   list-style-type: none; }
   footer ul li {
@@ -124,33 +113,57 @@ a {
 .body-tortas {
   background-color: #ec9dd2; }
 
-.main-tortas .section-tortas .lemon {
-  width: 500px; }
-
-.main-tortas .section-tortas .brownie {
-  width: 500px; }
-
-.main-tortas .section-tortas .crumble {
-  width: 500px; }
-
-.main-tortas .section-tortas .membrillo {
-  width: 500px; }
-
-.main-tortas .section-tortas div .lemon-p, .main-tortas .section-tortas .brownie-b, .main-tortas .section-tortas .crumble-c, .main-tortas .section-tortas .pastafrola-p {
-  font-size: 25px; }
-
-.main-tortas .section-tortas .lemon-p p {
-  font-size: 25px; }
+.main-tortas {
+  position: relative; }
+  .main-tortas .nuestras-tortas {
+    display: inline;
+    background-color: #e965ad;
+    position: relative;
+    top: 15px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px; }
+  .main-tortas .section-tortas .lemon {
+    width: 500px; }
+  .main-tortas .section-tortas .brownie {
+    width: 500px; }
+  .main-tortas .section-tortas .crumble {
+    width: 500px; }
+  .main-tortas .section-tortas .membrillo {
+    width: 500px; }
+  .main-tortas .section-tortas div .lemon-p, .main-tortas .section-tortas .brownie-b, .main-tortas .section-tortas .crumble-c, .main-tortas .section-tortas .pastafrola-p {
+    font-size: 25px; }
+  .main-tortas .section-tortas .lemon-p p {
+    font-size: 25px; }
 
 /*               Estilos de Postres                   */
 .body-postres {
   background-color: #ec9dd2; }
+  .body-postres .nuestros-postres {
+    display: inline;
+    background-color: #e965ad;
+    position: relative;
+    top: 15px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px; }
   .body-postres .section-postres .tiramisu-t, .body-postres .section-postres .parfait-p {
     font-size: 25px; }
 
 /*                Estilos de alfajores                */
 .body-alfajores {
   background-color: #ec9dd2; }
+  .body-alfajores .nuestros-alfajores {
+    display: inline;
+    background-color: #e965ad;
+    position: relative;
+    top: 15px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px; }
   .body-alfajores .section-alfajores .alfajores-a {
     font-size: 25px; }
 
@@ -324,6 +337,10 @@ a {
   position: relative;
   margin: 0 auto;
   background-color: #ce77da; }
+  .card .card-body .card-title {
+    font-size: 25px; }
+  .card .card-body .card-text {
+    font-size: 25px; }
 
 /*de las cards de quienes somos */
 .card-body-qs {
@@ -343,7 +360,7 @@ a {
   font-weight: bold;
   text-align: center; }
 
-/* De los botones de información */
+/* De los botones */
 .btn, .btn-qs {
   margin-top: 10px;
   background-color: #ce5cb5;
@@ -561,18 +578,20 @@ ol, ul {
     font-weight: bold; }
   /* tortas */
   /* empiezan grids de tortas*/
-  .section-tortas {
+  .main-tortas .section-tortas {
     margin: 25px;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px; }
-    .section-tortas .tortas .lemon {
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 15px;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .main-tortas .section-tortas .tortas .lemon {
       width: 500px; }
-    .section-tortas .tortas .brownie {
+    .main-tortas .section-tortas .tortas .brownie {
       width: 500px; }
-    .section-tortas .tortas .crumble {
+    .main-tortas .section-tortas .tortas .crumble {
       width: 500px; }
-    .section-tortas .tortas .membrillo {
+    .main-tortas .section-tortas .tortas .membrillo {
       width: 500px; }
   /* Postres */
   /* Empieza grids de postres */
